@@ -3,7 +3,7 @@ import numbers
 import time
 
 start = time.time()
-array = numbers.list_of_numbers
+array = numbers.list_of_numbers.copy()
 
 def selection_sort(array):
     n = len(array)
@@ -17,4 +17,5 @@ def selection_sort(array):
 
 selection_sort(array)
 end = time.time()
+
 print(f"Total runtime of the program is {end - start} seconds")
